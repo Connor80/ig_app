@@ -35,9 +35,17 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'capybara'
+gem 'factory_girl_rails'
+gem 'haml'
+gem "haml-rails", "~> 0.9"
+gem 'simple_form'
+gem 'paperclip', '~> 4.2'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'rspec-rails', '~> 3.5'
 end
 
 group :development do
